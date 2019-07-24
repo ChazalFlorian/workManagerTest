@@ -15,7 +15,7 @@ class FirstChainWorker(context: Context, params : WorkerParameters): CoroutineWo
     }
 
     companion object {
-        fun getFirstChainWorker(): OneTimeWorkRequest {
+        fun getFirstChainWorkerBuilded(): OneTimeWorkRequest {
             val constraints = Constraints.Builder()
                 .setRequiredNetworkType(NetworkType.UNMETERED)
 
